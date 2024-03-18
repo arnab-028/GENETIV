@@ -1,7 +1,4 @@
-# Build and Deploy a Full Stack MERN AI Image Generation App  MidJourney & DALL E Clone
-![Image Generation App](https://i.ibb.co/p0f27C2/Thumbnail-9.png)
+![image](https://github.com/arnab-028/GENETIV/assets/87126557/c6b10575-da93-4206-918b-9b8bd767c6d7)
+![image](https://github.com/arnab-028/GENETIV/assets/87126557/1a4bcd08-6dcf-49d8-8403-7e6840ab2123)
+Deployed Link- https://genetiv-delta.vercel.app/
 
-### [🌟 Become a top 1% Next.js 13 developer in only one course](https://jsmastery.pro/next13)
-### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
-
-### Launch your development career with project-based coaching - https://www.jsmastery.pro
