@@ -6,7 +6,7 @@ import postRoutes from './routes/postRoutes.js';
 import dalleRoutes from './routes/dalleRoutes.js';
 
 dotenv.config();
-const whitelist = ['https://genetiv-delta.vercel.app/',"*"]; 
+const whitelist = ['https://genetiv-delta.vercel.app/']; 
 const corsOptions = {
     origin: function (origin, callback) {
         if (whitelist.indexOf(origin) !== -1) {
@@ -17,13 +17,11 @@ const corsOptions = {
     },
     methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
     optionsSuccessStatus: 200, 
-    credentials: true,
+    // credentials: true,
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'device-remember-token', 'Access-Control-Allow-Origin', 'Origin', 'Accept']
 };
 const app = express();
-// app.usecors({
-//   origin: '*', 
-// });
+app.usecors(corsOptions);
 app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
