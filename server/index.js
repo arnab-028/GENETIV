@@ -21,7 +21,9 @@ const corsOptions = {
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'device-remember-token', 'Access-Control-Allow-Origin', 'Origin', 'Accept']
 };
 const app = express();
-app.use(cors(corsOptions));
+app.usecors({
+  origin: '*', 
+});
 app.use(express.json({ limit: '50mb' })); // Limit request body size to 50MB
 
 //building the APi endpoints
